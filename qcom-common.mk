@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     setup_fs
 
 # Thermal profiles
-ifeq ($(TARGET_BOARD_PLATFORM),msm8960)
 PRODUCT_PACKAGES += \
     thermald-8064ab.conf \
     thermald-8064.conf \
@@ -70,7 +69,6 @@ PRODUCT_PACKAGES += \
     thermald-8960.conf \
     thermald-8960ab.conf \
     thermal-engine-8064ab.conf
-endif
 
 # Init scripts
 PRODUCT_PACKAGES += \
