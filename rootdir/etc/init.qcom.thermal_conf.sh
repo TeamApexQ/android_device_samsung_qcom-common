@@ -70,7 +70,12 @@ if [ ! -h $THERMALD_CONF_SYMLINK ]; then
      ;;
 
      *) #MSM8960, etc
+     revision=`getprop ro.revision`
+     if [ "$revision" = "4" ]; then
+     ln -s /etc/thermald-8960r4.conf $THERMALD_CONF_SYMLINK 2>/dev/null
+     else
      ln -s /etc/thermald-8960.conf $THERMALD_CONF_SYMLINK 2>/dev/null
+     fi
      ;;
  esac
 fi
