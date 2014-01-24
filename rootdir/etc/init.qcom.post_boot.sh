@@ -150,7 +150,7 @@ case "$target" in
          echo "interactive" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
          echo "interactive" > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
          echo "interactive" > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
-         echo 95 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+         echo 90 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
          echo 90000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
          echo 1134000 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
          echo 30000 > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
