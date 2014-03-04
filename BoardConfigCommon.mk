@@ -27,7 +27,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_PROVIDES_POWERHAL := true
 
 # chargers
-BOARD_CHARGER_RES := device/samsung/qcom-common/charger
+# BOARD_CHARGER_RES := device/samsung/qcom-common/charger
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
