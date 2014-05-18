@@ -187,11 +187,11 @@ case "$target" in
          chown -h system /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
          echo 1 > /dev/cpuctl/apps/cpu.notify_on_migrate
          echo 1 > /sys/module/msm_thermal/core_control/enabled
-         chown -h root.system /sys/devices/system/cpu/mfreq
+         chown -h system.system /sys/devices/system/cpu/mfreq
          chmod -h 220 /sys/devices/system/cpu/mfreq
-         chown -h root.system /sys/devices/system/cpu/cpu1/online
-         chown -h root.system /sys/devices/system/cpu/cpu2/online
-         chown -h root.system /sys/devices/system/cpu/cpu3/online
+         chown -h system.system /sys/devices/system/cpu/cpu1/online
+         chown -h system.system /sys/devices/system/cpu/cpu2/online
+         chown -h system.system /sys/devices/system/cpu/cpu3/online
          chmod -h 664 /sys/devices/system/cpu/cpu1/online
          chmod -h 664 /sys/devices/system/cpu/cpu2/online
          chmod -h 664 /sys/devices/system/cpu/cpu3/online
