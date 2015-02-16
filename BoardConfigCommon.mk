@@ -55,3 +55,5 @@ BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.qcom
 
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard1
